@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Online Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">ShopEase</h1>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <h2>Find What You Love</h2>
+                <p>Discover quality products at great prices.</p>
+                <a href="#products" class="hero-btn">Shop Now</a>
+            </div>
+        </section>
+
+
+        <section class="products-section" id="products">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Our Products</h2>
+
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+
+
+                <div class="products" id="productsContainer">
+                    <!-- Products will be added by JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+
+                <button id="closeCart">×</button>
+            </div>
+
+            <div id="cartItems">
+                <!-- Cart items -->
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="total">
+                    <span>Total:</span>
+                    <strong>$<span id="cartTotal">0</span></strong>
+                </div>
+
+                <button class="checkout-btn">
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 ShopEase. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
